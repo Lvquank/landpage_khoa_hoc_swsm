@@ -1,0 +1,405 @@
+/* =============================================
+   Smart Work Smart Money — Custom Styles
+   ============================================= */
+
+/* ─── BASE TYPOGRAPHY SCALE-UP ──────────────── */
+body {
+    font-size: 18px;
+    line-height: 1.7;
+}
+
+p {
+    font-size: 17px;
+    line-height: 1.75;
+    color: #43474d;
+}
+
+/* ─── SECTION HEADINGS HIERARCHY ────────────── */
+section h2 {
+    font-size: clamp(30px, 4vw, 46px) !important;
+    line-height: 1.2 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.02em;
+}
+
+section h3 {
+    font-size: clamp(18px, 2vw, 22px) !important;
+    font-weight: 700 !important;
+}
+
+/* ─── HERO SECTION ───────────────────────────── */
+.hero-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background: linear-gradient(135deg, rgba(247, 82, 28, 0.12), rgba(0, 88, 188, 0.12));
+    border: 1.5px solid rgba(247, 82, 28, 0.35);
+    color: #f7521c;
+    font-weight: 700;
+    font-size: 13px;
+    letter-spacing: 0.08em;
+    padding: 6px 16px;
+    border-radius: 100px;
+    text-transform: uppercase;
+    /* animation: badgePop 2s ease-in-out infinite; */
+}
+
+/*
+@keyframes badgePop {
+    0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 rgba(247, 82, 28, 0.3); }
+    50%       { transform: scale(1.02); box-shadow: 0 0 0 6px rgba(247, 82, 28, 0); }
+}
+*/
+
+.hero-title-main {
+    font-size: clamp(52px, 7vw, 80px) !important;
+    line-height: 1.05 !important;
+    font-weight: 800 !important;
+    letter-spacing: -0.03em !important;
+    color: #000f22;
+}
+
+.hero-subtitle {
+    font-size: clamp(18px, 2.2vw, 22px) !important;
+    font-weight: 600 !important;
+    color: #314865 !important;
+    line-height: 1.5 !important;
+}
+
+/* ─── GLASS PANEL COMPONENT ─────────────────── */
+.glass-panel {
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(20px);
+    border: 1.5px solid rgba(255, 255, 255, 0.6);
+}
+
+.dark .glass-panel {
+    background: rgba(10, 37, 64, 0.8);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ─── GRADIENT TEXT ──────────────────────────── */
+.gradient-text {
+    background: linear-gradient(90deg, #0058bc, #0070eb);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* ─── CTA BUTTONS ────────────────────────────── */
+.cta-glow {
+    box-shadow: 0 0 20px rgba(247, 82, 28, 0.4);
+}
+
+.cta-primary {
+    font-size: 17px !important;
+    padding: 18px 36px !important;
+    border-radius: 14px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.04em;
+    /* animation: ctaPulse 2.5s ease-in-out infinite; */
+    /* box-shadow: 0 8px 30px rgba(247, 82, 28, 0.45) !important; */
+}
+
+/*
+@keyframes ctaPulse {
+    0%, 100% {
+        box-shadow: 0 8px 30px rgba(247, 82, 28, 0.45), 0 0 0 0 rgba(247, 82, 28, 0.4);
+    }
+    50% {
+        box-shadow: 0 12px 40px rgba(247, 82, 28, 0.6), 0 0 0 10px rgba(247, 82, 28, 0);
+    }
+}
+*/
+
+/* ─── SECTION DIVIDER ACCENT ────────────────── */
+.section-accent {
+    width: 60px;
+    height: 4px;
+    background: linear-gradient(90deg, #f7521c, #0058bc);
+    border-radius: 100px;
+    margin: 0 auto 8px;
+    display: block;
+}
+
+/* ─── PAIN POINT CARDS ───────────────────────── */
+.pain-item {
+    border-left: 3px solid transparent;
+    transition: all 0.25s ease;
+}
+
+.pain-item:hover {
+    border-left-color: #ba1a1a;
+    background: #fff !important;
+    transform: translateX(4px);
+    box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+}
+
+.pain-item h3 {
+    font-size: 19px !important;
+    font-weight: 700 !important;
+}
+
+/* ─── HIGHLIGHT KEY NUMBERS ──────────────────── */
+.num-highlight {
+    color: #f7521c;
+    font-weight: 800;
+    font-size: 1.15em;
+}
+
+/* ─── SECTION CARD HOVER ─────────────────────── */
+.value-card {
+    transition: all 0.3s ease;
+    border-left: 4px solid transparent;
+}
+
+.value-card:hover {
+    border-left-color: #0058bc;
+    transform: translateX(6px);
+    box-shadow: 0 6px 24px rgba(0, 88, 188, 0.1);
+}
+
+.value-card h3 {
+    font-size: 19px !important;
+    color: #0058bc !important;
+}
+
+/* ─── TESTIMONIAL STARS ──────────────────────── */
+.star-rating::before {
+    content: "★★★★★";
+    color: #f59e0b;
+    font-size: 18px;
+    letter-spacing: 2px;
+    display: block;
+    margin-bottom: 8px;
+}
+
+/* ─── REGISTRATION FORM SECTION ──────────────── */
+.form-spotlight {
+    position: relative;
+}
+
+.form-spotlight::before {
+    content: '';
+    position: absolute;
+    inset: -3px;
+    background: linear-gradient(135deg, #f7521c 0%, #0058bc 100%);
+    border-radius: 22px;
+    z-index: -1;
+    opacity: 0.6;
+    /* animation: formGlow 3s ease-in-out infinite; */
+}
+
+/*
+@keyframes formGlow {
+    0%, 100% { opacity: 0.5; }
+    50%       { opacity: 0.85; }
+}
+*/
+
+.form-spotlight h3 {
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    letter-spacing: 0.04em;
+}
+
+/* ─── URGENCY BADGE ──────────────────────────── */
+.urgency-badge {
+    display: inline-block;
+    background: linear-gradient(135deg, #f7521c, #e53935);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 800;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    padding: 4px 14px;
+    border-radius: 100px;
+    /* animation: urgencyPulse 1.8s ease-in-out infinite; */
+}
+
+/*
+@keyframes urgencyPulse {
+    0%, 100% { transform: scale(1); }
+    50%       { transform: scale(1.05); }
+}
+*/
+
+/* ─── PRICE BOX ──────────────────────────────── */
+.price-box {
+    background: linear-gradient(135deg, rgba(10,37,64,0.9), rgba(10,37,64,1));
+    border: 2px solid rgba(247,82,28,0.5);
+    border-radius: 16px;
+    padding: 24px 32px;
+    position: relative;
+    overflow: hidden;
+}
+
+.price-box::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -20%;
+    width: 200px;
+    height: 200px;
+    background: radial-gradient(circle, rgba(247,82,28,0.2) 0%, transparent 70%);
+    pointer-events: none;
+}
+
+.price-main {
+    font-size: clamp(36px, 5vw, 52px) !important;
+    font-weight: 900 !important;
+    color: #f7521c !important;
+    line-height: 1 !important;
+    display: block;
+}
+
+/* ─── ROADMAP PHASE ──────────────────────────── */
+.phase-card {
+    background: rgba(255,255,255,0.7);
+    border: 1.5px solid rgba(0,88,188,0.1);
+    border-radius: 16px;
+    padding: 24px;
+    transition: all 0.3s ease;
+}
+
+.phase-card:hover {
+    border-color: rgba(0,88,188,0.4);
+    box-shadow: 0 8px 32px rgba(0,88,188,0.1);
+    transform: translateY(-3px);
+}
+
+.phase-number {
+    font-size: 28px !important;
+    font-weight: 900 !important;
+}
+
+/* ─── SCROLL ANIMATION ───────────────────────── */
+/*
+[data-animate] {
+    opacity: 0;
+    transform: translateY(24px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+[data-animate].visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+*/
+
+/* ─── WHY CARDS (Block 4) ────────────────────── */
+.why-card {
+    transition: all 0.3s ease;
+}
+
+.why-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 32px rgba(0,0,0,0.08);
+}
+
+.why-card h3 {
+    font-weight: 700 !important;
+}
+
+.why-card p {
+    font-size: 16px !important;
+    line-height: 1.7;
+}
+
+/* ─── MENTOR SECTION ─────────────────────────── */
+.mentor-name {
+    font-size: clamp(32px, 4vw, 48px) !important;
+    font-weight: 800 !important;
+    color: #000f22 !important;
+    line-height: 1.1 !important;
+    margin-bottom: 10px;
+}
+
+.mentor-title {
+    font-size: 20px !important;
+    font-weight: 600 !important;
+    color: #0058bc !important;
+    margin-bottom: 32px !important;
+    line-height: 1.4;
+}
+
+.mentor-stats {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 16px;
+    margin-top: 8px;
+}
+
+.stat-card {
+    background: linear-gradient(135deg, #f1f4f7, #fff);
+    border: 1.5px solid rgba(0, 88, 188, 0.15);
+    border-radius: 14px;
+    padding: 20px 16px;
+    text-align: center;
+    transition: all 0.25s ease;
+}
+
+.stat-card:hover {
+    border-color: rgba(0, 88, 188, 0.4);
+    box-shadow: 0 6px 20px rgba(0, 88, 188, 0.1);
+    transform: translateY(-3px);
+}
+
+.stat-val {
+    display: block;
+    font-size: clamp(28px, 3.5vw, 40px);
+    font-weight: 900;
+    color: #f7521c;
+    line-height: 1;
+    margin-bottom: 6px;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.stat-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #43474d;
+    line-height: 1.4;
+}
+
+/* ─── MENTOR BIO & TAGS ──────────────────────── */
+.mentor-bio {
+    font-size: 16.5px !important;
+    line-height: 1.8 !important;
+    color: #43474d !important;
+    margin-bottom: 24px !important;
+    border-left: 3px solid #0058bc;
+    padding-left: 16px;
+}
+
+.mentor-bio strong {
+    color: #000f22;
+    font-weight: 700;
+}
+
+.mentor-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 28px;
+}
+
+.mentor-tag {
+    display: inline-block;
+    background: linear-gradient(135deg, rgba(0,88,188,0.08), rgba(0,112,235,0.08));
+    border: 1.5px solid rgba(0, 88, 188, 0.25);
+    color: #0058bc;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 6px 14px;
+    border-radius: 100px;
+    transition: all 0.2s ease;
+    cursor: default;
+}
+
+.mentor-tag:hover {
+    background: rgba(0, 88, 188, 0.15);
+    border-color: rgba(0, 88, 188, 0.5);
+    transform: translateY(-2px);
+}

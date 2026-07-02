@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="vi" style="">
+
+<head>
+        <meta charset="utf-8">
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <title>Smart Work - Smart Money | AI For Professionals</title>
+        <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+                rel="stylesheet">
+        <link href="https://fonts.googleapis.com" rel="preconnect">
+        <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect">
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&amp;family=Montserrat:wght@600;700&amp;display=swap"
+                rel="stylesheet">
+        <script id="tailwind-config">
+                tailwind.config = {
+                        darkMode: "class",
+                        theme: {
+                                extend: {
+                                        "colors": {
+                                                "on-secondary": "#ffffff",
+                                                "tertiary-container": "#4a0e00",
+                                                "surface-container-high": "#e5e8eb",
+                                                "surface-container-low": "#f1f4f7",
+                                                "on-secondary-fixed-variant": "#004493",
+                                                "on-surface-variant": "#43474d",
+                                                "tertiary-fixed-dim": "#ffb5a0",
+                                                "surface-container-highest": "#e0e3e6",
+                                                "on-primary-fixed": "#001c37",
+                                                "error": "#ba1a1a",
+                                                "on-secondary-fixed": "#001a41",
+                                                "on-primary-container": "#768dad",
+                                                "on-background": "#181c1e",
+                                                "tertiary": "#240400",
+                                                "surface-variant": "#e0e3e6",
+                                                "secondary-container": "#0070eb",
+                                                "primary-container": "#0a2540",
+                                                "on-primary-fixed-variant": "#314865",
+                                                "primary": "#000f22",
+                                                "outline": "#74777e",
+                                                "on-surface": "#181c1e",
+                                                "on-error": "#ffffff",
+                                                "secondary-fixed": "#d8e2ff",
+                                                "on-tertiary-fixed-variant": "#862200",
+                                                "on-tertiary-fixed": "#3b0900",
+                                                "surface-tint": "#49607e",
+                                                "on-tertiary": "#ffffff",
+                                                "inverse-surface": "#2d3133",
+                                                "secondary-fixed-dim": "#adc6ff",
+                                                "on-secondary-container": "#fefcff",
+                                                "inverse-on-surface": "#eef1f4",
+                                                "secondary": "#0058bc",
+                                                "primary-fixed": "#d2e4ff",
+                                                "outline-variant": "#c4c6ce",
+                                                "error-container": "#ffdad6",
+                                                "on-tertiary-container": "#f7521c",
+                                                "surface": "#f7fafd",
+                                                "on-error-container": "#93000a",
+                                                "tertiary-fixed": "#ffdbd1",
+                                                "surface-dim": "#d7dadd",
+                                                "surface-bright": "#f7fafd",
+                                                "on-primary": "#ffffff",
+                                                "background": "#f7fafd",
+                                                "surface-container-lowest": "#ffffff",
+                                                "inverse-primary": "#b0c8eb",
+                                                "surface-container": "#ebeef1",
+                                                "primary-fixed-dim": "#b0c8eb"
+                                        },
+                                        "borderRadius": {
+                                                "DEFAULT": "0.25rem",
+                                                "lg": "0.5rem",
+                                                "xl": "0.75rem",
+                                                "full": "9999px"
+                                        },
+                                        "spacing": {
+                                                "margin-mobile": "16px",
+                                                "container-max": "1280px",
+                                                "stack-lg": "32px",
+                                                "section-padding": "120px",
+                                                "gutter": "24px",
+                                                "stack-sm": "8px",
+                                                "stack-md": "16px"
+                                        },
+                                        "fontFamily": {
+                                                "headline-lg-mobile": [
+                                                        "Montserrat"
+                                                ],
+                                                "display": [
+                                                        "Montserrat"
+                                                ],
+                                                "label-md": [
+                                                        "Inter"
+                                                ],
+                                                "headline-md": [
+                                                        "Montserrat"
+                                                ],
+                                                "headline-lg": [
+                                                        "Montserrat"
+                                                ],
+                                                "body-md": [
+                                                        "Inter"
+                                                ],
+                                                "body-lg": [
+                                                        "Inter"
+                                                ]
+                                        },
+                                        "fontSize": {
+                                                "headline-lg-mobile": [
+                                                        "32px",
+                                                        {
+                                                                "lineHeight": "40px",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "display": [
+                                                        "64px",
+                                                        {
+                                                                "lineHeight": "72px",
+                                                                "letterSpacing": "-0.02em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "label-md": [
+                                                        "14px",
+                                                        {
+                                                                "lineHeight": "20px",
+                                                                "letterSpacing": "0.05em",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-md": [
+                                                        "24px",
+                                                        {
+                                                                "lineHeight": "32px",
+                                                                "fontWeight": "600"
+                                                        }
+                                                ],
+                                                "headline-lg": [
+                                                        "40px",
+                                                        {
+                                                                "lineHeight": "48px",
+                                                                "letterSpacing": "-0.01em",
+                                                                "fontWeight": "700"
+                                                        }
+                                                ],
+                                                "body-md": [
+                                                        "16px",
+                                                        {
+                                                                "lineHeight": "24px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ],
+                                                "body-lg": [
+                                                        "18px",
+                                                        {
+                                                                "lineHeight": "28px",
+                                                                "fontWeight": "400"
+                                                        }
+                                                ]
+                                        }
+                                },
+                        },
+                }
+        </script>
+        <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="bg-background text-on-background font-body-md antialiased overflow-x-hidden">
+        <!-- BLOCK 0 — NAVIGATION (Shared Component) -->
+        <nav class="fixed top-0 w-full z-50 bg-surface/80 dark:bg-primary-container/80 backdrop-blur-xl border-b border-outline-variant/30 shadow-sm transition-all duration-300"
+                id="main-nav">
+                <div class="flex justify-between items-center px-gutter py-4 max-w-container-max mx-auto">
+                        <a class="font-display text-headline-md font-bold text-primary dark:text-on-primary-fixed"
+                                href="#">
+                                <div class="flex items-center gap-2"><span
+                                                class="material-symbols-outlined text-on-tertiary-container"
+                                                style="font-size: 32px;">school</span><span class="">SWSM</span></div>
+                        </a>
+                        <div class="hidden lg:flex gap-6 items-center"><a
+                                        class="font-body-md text-[16px] font-semibold text-on-surface-variant hover:text-secondary transition-colors hover:opacity-90 active:scale-95 duration-200"
+                                        href="#lotrinh">Lộ trình</a><a
+                                        class="font-body-md text-[16px] font-semibold text-on-surface-variant hover:text-secondary transition-colors hover:opacity-90 active:scale-95 duration-200"
+                                        href="#giangvien">Giảng viên</a><a
+                                        class="font-body-md text-[16px] font-semibold text-on-surface-variant hover:text-secondary transition-colors hover:opacity-90 active:scale-95 duration-200"
+                                        href="#giatri">Giá trị</a><a
+                                        class="font-body-md text-[16px] font-semibold text-on-surface-variant hover:text-secondary transition-colors hover:opacity-90 active:scale-95 duration-200"
+                                        href="#danhgia">Đánh giá</a><a
+                                        class="font-body-md text-[16px] font-semibold text-on-surface-variant hover:text-secondary transition-colors hover:opacity-90 active:scale-95 duration-200"
+                                        href="#faq">FAQ</a></div>
+                        <a class="hidden lg:inline-block bg-on-tertiary-container text-on-tertiary font-label-md px-6 py-2 rounded-full hover:opacity-90 transition-all active:scale-95 duration-200 shadow-md cta-glow"
+                                href="#dangky">
+                                Đăng ký ngay
+                        </a>
+                        <button class="lg:hidden text-primary">
+                                <span class="material-symbols-outlined" style="font-size: 28px;">menu</span>
+                        </button>
+                </div>
+        </nav>
+        <!-- BLOCK 1 — HERO -->
+        <section class="relative pt-32 pb-24 lg:pt-48 lg:pb-32 overflow-hidden flex items-center min-h-[921px]">
+                <div class="absolute inset-0 z-0">
+                        <div class="bg-cover bg-center bg-no-repeat w-full h-full"
+                                style="background-image: url('images/hero_banner.png');"></div>
+                </div>
+                <div class="max-w-container-max mx-auto px-gutter relative z-10 w-full text-center lg:text-left"
+                        style="pointer-events:none;">
+                        <div class="max-w-xl" style="pointer-events:auto;">
+                                <div class="flex flex-col gap-6">
+                                        <div class="hero-badge w-max mx-auto lg:mx-0">
+                                                Chương trình Đào tạo Tiên phong
+                                        </div>
+                                        <h1 class="font-display hero-title-main">
+                                                <span class="block">Smart Work</span>
+                                                <span class="gradient-text">Smart Money</span>
+                                        </h1>
+                                        <p class="hero-subtitle">
+                                                Làm việc thông minh hơn · Thăng tiến nhanh hơn · Gia tăng thu nhập cùng
+                                                AI
+                                        </p>
+                                        <p
+                                                class="font-body-lg text-body-lg text-on-surface-variant/80 max-w-2xl mx-auto lg:mx-0">
+                                                Giải pháp tối ưu hóa hiệu suất dành riêng cho dân văn phòng, quản lý và
+                                                freelancer muốn bứt phá sự nghiệp trong kỷ nguyên trí tuệ nhân tạo.
+                                        </p>
+                                        <div
+                                                class="pt-4 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                                                <a class="bg-on-tertiary-container text-on-tertiary cta-primary text-center uppercase flex items-center justify-center gap-2 group"
+                                                        href="#dangky">
+                                                        ĐĂNG KÝ NHẬN TƯ VẤN NGAY
+                                                        <span
+                                                                class="material-symbols-outlined group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                                                </a>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 2 — PAIN POINTS -->
+        <section class="py-section-padding bg-surface-container-low" id="vande">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Bạn có đang gặp những tình huống này?</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                                <div class="space-y-6">
+                                        <div
+                                                class="pain-item flex items-start gap-4 p-4 rounded-xl transition-colors border border-transparent">
+                                                <div
+                                                        class="flex-shrink-0 w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center">
+                                                        <span class="material-symbols-outlined">warning</span>
+                                                </div>
+                                                <div>
+                                                        <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">
+                                                                Làm việc 8-10 tiếng/ngày nhưng vẫn không hết việc?</h3>
+                                                        <p class="font-body-md text-on-surface-variant">Thường xuyên OT,
+                                                                cảm thấy kiệt sức nhưng hiệu quả công việc không được
+                                                                đánh giá cao.</p>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="pain-item flex items-start gap-4 p-4 rounded-xl transition-colors border border-transparent">
+                                                <div
+                                                        class="flex-shrink-0 w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center">
+                                                        <span class="material-symbols-outlined">warning</span>
+                                                </div>
+                                                <div>
+                                                        <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Lo
+                                                                sợ AI sẽ lấy mất công việc của mình?</h3>
+                                                        <p class="font-body-md text-on-surface-variant">Nghe nhiều về
+                                                                ChatGPT, Midjourney nhưng không biết áp dụng vào chuyên
+                                                                môn như thế nào.</p>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="pain-item flex items-start gap-4 p-4 rounded-xl transition-colors border border-transparent">
+                                                <div
+                                                        class="flex-shrink-0 w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center">
+                                                        <span class="material-symbols-outlined">warning</span>
+                                                </div>
+                                                <div>
+                                                        <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">
+                                                                Thu nhập dậm chân tại chỗ nhiều năm?</h3>
+                                                        <p class="font-body-md text-on-surface-variant">Muốn gia tăng
+                                                                thu nhập, làm thêm dự án ngoài nhưng không có đủ thời
+                                                                gian và năng lực xử lý.</p>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="pain-item flex items-start gap-4 p-4 rounded-xl transition-colors border border-transparent">
+                                                <div
+                                                        class="flex-shrink-0 w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center">
+                                                        <span class="material-symbols-outlined">warning</span>
+                                                </div>
+                                                <div>
+                                                        <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">
+                                                                Loay hoay với hàng tá file excel, báo cáo thủ công?</h3>
+                                                        <p class="font-body-md text-on-surface-variant">Mất hàng giờ
+                                                                đồng hồ để tổng hợp dữ liệu, tìm kiếm thông tin và làm
+                                                                báo cáo.</p>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="pain-item flex items-start gap-4 p-4 rounded-xl transition-colors border border-transparent">
+                                                <div
+                                                        class="flex-shrink-0 w-10 h-10 rounded-full bg-error-container text-error flex items-center justify-center">
+                                                        <span class="material-symbols-outlined">warning</span>
+                                                </div>
+                                                <div>
+                                                        <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">
+                                                                Thiếu ý tưởng, bí tưởng khi làm việc?</h3>
+                                                        <p class="font-body-md text-on-surface-variant">Mất nhiều thời
+                                                                gian để brainstorm, viết nội dung, lập kế hoạch.</p>
+                                                </div>
+                                        </div>
+                                </div>
+                                <div class="relative h-full min-h-[400px] rounded-2xl overflow-hidden shadow-lg">
+                                        <img class="absolute inset-0 w-full h-full object-cover"
+                                                alt="Burnout vs AI productivity transformation"
+                                                src="images/pain_points.png">
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 3 — CONSEQUENCES -->
+        <section class="py-section-padding bg-background">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Nếu vẫn tiếp tục làm việc theo cách cũ...</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div
+                                        class="p-8 bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:border-error/30 transition-all group">
+                                        <span
+                                                class="material-symbols-outlined text-error text-4xl mb-4 block">person_off</span>
+                                        <h3 class="font-headline-md text-primary mb-3">Bị thay thế bởi AI</h3>
+                                        <p class="font-body-md text-on-surface-variant">Thị trường lao động đang đào
+                                                thải những người làm việc thủ công. Không biết dùng AI là tự tước đi cơ
+                                                hội của chính mình.</p>
+                                </div>
+                                <div
+                                        class="p-8 bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:border-error/30 transition-all group">
+                                        <span
+                                                class="material-symbols-outlined text-error text-4xl mb-4 block">trending_down</span>
+                                        <h3 class="font-headline-md text-primary mb-3">Thu nhập dậm chân</h3>
+                                        <p class="font-body-md text-on-surface-variant">Mức lương không đổi trong khi
+                                                lạm phát tăng cao. Bạn đang nghèo đi mỗi ngày nếu không nâng cấp năng
+                                                lực kiếm tiền.</p>
+                                </div>
+                                <div
+                                        class="p-8 bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:border-error/30 transition-all group">
+                                        <span
+                                                class="material-symbols-outlined text-error text-4xl mb-4 block">timer_off</span>
+                                        <h3 class="font-headline-md text-primary mb-3">Kiệt sức vì OT</h3>
+                                        <p class="font-body-md text-on-surface-variant">Làm việc 10-12 tiếng nhưng hiệu
+                                                quả thấp. Sức khỏe và các mối quan hệ gia đình dần rạn nứt vì áp lực
+                                                công việc.</p>
+                                </div>
+                                <div
+                                        class="p-8 bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:border-error/30 transition-all group">
+                                        <span
+                                                class="material-symbols-outlined text-error text-4xl mb-4 block">psychology_alt</span>
+                                        <h3 class="font-headline-md text-primary mb-3">Mất lợi thế cạnh tranh</h3>
+                                        <p class="font-body-md text-on-surface-variant">Người trẻ nhạy bén công nghệ sẽ
+                                                nhanh chóng vượt mặt bạn trong các đợt xét thăng tiến và tăng lương.</p>
+                                </div>
+                                <div
+                                        class="p-8 bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:border-error/30 transition-all group">
+                                        <span
+                                                class="material-symbols-outlined text-error text-4xl mb-4 block">block</span>
+                                        <h3 class="font-headline-md text-primary mb-3">Bí bách ý tưởng</h3>
+                                        <p class="font-body-md text-on-surface-variant">Luôn cảm thấy cạn kiệt sáng tạo,
+                                                mất hàng giờ để bắt đầu một bản kế hoạch hay nội dung mới.</p>
+                                </div>
+                                <div
+                                        class="p-8 bg-surface-container-low rounded-2xl border border-outline-variant/20 hover:border-error/30 transition-all group">
+                                        <span
+                                                class="material-symbols-outlined text-error text-4xl mb-4 block">running_with_errors</span>
+                                        <h3 class="font-headline-md text-primary mb-3">Tụt hậu công nghệ</h3>
+                                        <p class="font-body-md text-on-surface-variant">Thế giới đang thay đổi từng
+                                                ngày. Dừng lại nghĩa là bạn đang lùi bước so với tốc độ phát triển của
+                                                xã hội.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 4 — WHY THIS COURSE -->
+        <section class="py-section-padding bg-surface">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Vì sao chúng tôi xây dựng chương trình này?</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+                                <!-- Card 1 -->
+                                <div
+                                        class="why-card text-center p-8 bg-surface-container-low rounded-2xl border border-outline-variant/20">
+                                        <div
+                                                class="w-16 h-16 rounded-full bg-primary-fixed/30 flex items-center justify-center mx-auto mb-5">
+                                                <span class="material-symbols-outlined text-primary"
+                                                        style="font-size:32px">favorite</span>
+                                        </div>
+                                        <h3 class="font-headline-md text-primary mb-3" style="font-size:20px">Chúng tôi
+                                                hiểu bạn</h3>
+                                        <p class="font-body-md text-on-surface-variant">Chúng tôi thấu hiểu những áp lực
+                                                mà người đi làm đang phải đối mặt trong kỷ nguyên số.</p>
+                                </div>
+                                <!-- Card 2 -->
+                                <div
+                                        class="why-card text-center p-8 bg-error-container/20 rounded-2xl border border-error/20">
+                                        <div
+                                                class="w-16 h-16 rounded-full bg-error-container/50 flex items-center justify-center mx-auto mb-5">
+                                                <span class="material-symbols-outlined text-error"
+                                                        style="font-size:32px">warning</span>
+                                        </div>
+                                        <h3 class="font-headline-md text-error mb-3" style="font-size:20px">Vấn đề của
+                                                các khóa học khác</h3>
+                                        <p class="font-body-md text-on-surface-variant">Nhiều khóa học AI chỉ hướng dẫn
+                                                công cụ máy móc, khiến học viên không thể áp dụng vào công việc thực tế.
+                                        </p>
+                                </div>
+                                <!-- Card 3 -->
+                                <div
+                                        class="why-card text-center p-8 bg-secondary-container/10 rounded-2xl border border-secondary/20">
+                                        <div
+                                                class="w-16 h-16 rounded-full bg-secondary-fixed/50 flex items-center justify-center mx-auto mb-5">
+                                                <span class="material-symbols-outlined text-secondary"
+                                                        style="font-size:32px">rocket_launch</span>
+                                        </div>
+                                        <h3 class="font-headline-md text-secondary mb-3" style="font-size:20px">Giải
+                                                pháp của chúng tôi</h3>
+                                        <p class="font-body-md text-on-surface-variant">SWSM được thiết kế với triết lý
+                                                “Learn by Doing” — chuyển hóa kiến thức thành kết quả đo lường được ngay
+                                                từ buổi đầu tiên.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 5 — FUTURE VISION -->
+        <section class="py-section-padding bg-background">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Đây là kết quả thực tế học viên đạt được</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="p-6 glass-panel rounded-xl text-center">
+                                        <span
+                                                class="material-symbols-outlined text-secondary text-5xl mb-4">sentiment_very_satisfied</span>
+                                        <p class="font-body-md text-on-surface-variant">Bạn hoàn thành khối lượng công
+                                                việc 8 tiếng chỉ trong 3 tiếng.</p>
+                                </div>
+                                <div class="p-6 glass-panel rounded-xl text-center">
+                                        <span
+                                                class="material-symbols-outlined text-secondary text-5xl mb-4">trending_up</span>
+                                        <p class="font-body-md text-on-surface-variant">Chất lượng công việc vượt trội,
+                                                được sếp đánh giá cao và thăng tiến nhanh chóng.</p>
+                                </div>
+                                <div class="p-6 glass-panel rounded-xl text-center">
+                                        <span
+                                                class="material-symbols-outlined text-secondary text-5xl mb-4">payments</span>
+                                        <p class="font-body-md text-on-surface-variant">Có thêm thời gian để nhận dự án
+                                                ngoài, gia tăng thu nhập thụ động.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 6 — SOLUTION (Bento Grid) -->
+        <section class="py-section-padding bg-surface-container-low relative" id="giaiphap">
+                <div class="absolute inset-0 opacity-5"
+                        style="background-image: radial-gradient(#0058bc 1px, transparent 1px); background-size: 32px 32px;">
+                </div>
+                <div class="max-w-container-max mx-auto px-gutter relative z-10">
+                        <div class="text-center mb-16 max-w-3xl mx-auto">
+                                <span class="text-secondary font-label-md tracking-widest uppercase mb-2 block">Giải
+                                        pháp đột phá</span>
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-6">
+                                        Giải pháp toàn diện giúp bạn làm chủ AI trong công việc</h2>
+                                <p class="font-body-lg text-on-surface-variant">Không chỉ là học công cụ, đây là hệ tư
+                                        duy mới để nâng cấp giá trị bản thân trong kỷ nguyên số.</p>
+                        </div>
+                        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                                <!-- Card 1 -->
+                                <div
+                                        class="glass-panel p-8 rounded-2xl flex flex-col items-start gap-6 hover:-translate-y-2 transition-transform duration-300 shadow-sm">
+                                        <div
+                                                class="w-14 h-14 rounded-xl bg-primary-fixed flex items-center justify-center text-primary-fixed-dim">
+                                                <span class="material-symbols-outlined" data-weight="fill"
+                                                        style="font-size: 32px;">rocket_launch</span>
+                                        </div>
+                                        <div>
+                                                <h3 class="font-headline-md text-primary mb-3">Tối ưu Hiệu suất
+                                                        (Performance)</h3>
+                                                <p class="font-body-md text-on-surface-variant">Tự động hóa các tác vụ
+                                                        lặp đi lặp lại. Rút ngắn thời gian xử lý công việc từ vài ngày
+                                                        xuống vài giờ, thậm chí vài phút bằng việc kết hợp các công cụ
+                                                        AI.</p>
+                                        </div>
+                                </div>
+                                <!-- Card 2 -->
+                                <div
+                                        class="glass-panel p-8 rounded-2xl flex flex-col items-start gap-6 hover:-translate-y-2 transition-transform duration-300 shadow-sm border-secondary/20">
+                                        <div
+                                                class="w-14 h-14 rounded-xl bg-secondary-fixed flex items-center justify-center text-secondary">
+                                                <span class="material-symbols-outlined" data-weight="fill"
+                                                        style="font-size: 32px;">psychology</span>
+                                        </div>
+                                        <div>
+                                                <h3 class="font-headline-md text-primary mb-3">Nâng cấp Năng lực
+                                                        (Capability)</h3>
+                                                <p class="font-body-md text-on-surface-variant">Sở hữu "trợ lý ảo" đa
+                                                        năng 24/7. Giải quyết các bài toán phức tạp, nâng cao chất lượng
+                                                        báo cáo, phân tích dữ liệu và sáng tạo nội dung vượt trội so với
+                                                        đồng nghiệp.</p>
+                                        </div>
+                                </div>
+                                <!-- Card 3 -->
+                                <div
+                                        class="glass-panel p-8 rounded-2xl flex flex-col items-start gap-6 hover:-translate-y-2 transition-transform duration-300 shadow-sm border-tertiary-fixed/30 relative overflow-hidden">
+                                        <div
+                                                class="absolute top-0 right-0 w-32 h-32 bg-on-tertiary-container/10 rounded-full blur-2xl -mr-10 -mt-10">
+                                        </div>
+                                        <div
+                                                class="w-14 h-14 rounded-xl bg-tertiary-fixed flex items-center justify-center text-on-tertiary-container">
+                                                <span class="material-symbols-outlined" data-weight="fill"
+                                                        style="font-size: 32px;">trending_up</span>
+                                        </div>
+                                        <div class="relative z-10">
+                                                <h3 class="font-headline-md text-primary mb-3">Gia tăng Thu nhập
+                                                        (Income)</h3>
+                                                <p class="font-body-md text-on-surface-variant">Sử dụng thời gian tiết
+                                                        kiệm được để nhận thêm dự án, xây dựng nguồn thu nhập thụ động,
+                                                        hoặc thương lượng mức lương cao hơn nhờ hiệu suất vượt trội.</p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 7 — TARGET AUDIENCE -->
+        <section class="py-section-padding bg-background">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Chương trình này dành cho ai?</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                                <div
+                                        class="p-6 glass-panel rounded-xl text-center hover:-translate-y-2 transition-transform">
+                                        <span class="material-symbols-outlined text-secondary text-4xl mb-4">work</span>
+                                        <h3 class="font-headline-md text-primary mb-2 text-xl">Dân văn phòng</h3>
+                                        <p class="font-body-md text-on-surface-variant">Marketing, HR, Sales, Hành chính
+                                                nhân sự...</p>
+                                </div>
+                                <div
+                                        class="p-6 glass-panel rounded-xl text-center hover:-translate-y-2 transition-transform">
+                                        <span
+                                                class="material-symbols-outlined text-secondary text-4xl mb-4">manage_accounts</span>
+                                        <h3 class="font-headline-md text-primary mb-2 text-xl">Quản lý cấp trung</h3>
+                                        <p class="font-body-md text-on-surface-variant">Trưởng nhóm, Giám đốc muốn tối
+                                                ưu quy trình.</p>
+                                </div>
+                                <div
+                                        class="p-6 glass-panel rounded-xl text-center hover:-translate-y-2 transition-transform">
+                                        <span
+                                                class="material-symbols-outlined text-secondary text-4xl mb-4">circle</span>
+                                        <h3 class="font-headline-md text-primary mb-2 text-xl">Freelancer</h3>
+                                        <p class="font-body-md text-on-surface-variant">Content Creator, Designer muốn
+                                                tăng hiệu suất.</p>
+                                </div>
+                                <div
+                                        class="p-6 glass-panel rounded-xl text-center hover:-translate-y-2 transition-transform">
+                                        <span
+                                                class="material-symbols-outlined text-secondary text-4xl mb-4">school</span>
+                                        <h3 class="font-headline-md text-primary mb-2 text-xl">Sinh viên năm cuối</h3>
+                                        <p class="font-body-md text-on-surface-variant">Trang bị kỹ năng để tự tin bước
+                                                vào thị trường lao động.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 8 — 90-DAY ROADMAP -->
+        <section class="py-section-padding bg-surface" id="lotrinh">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Lộ trình chinh phục Smart Work</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="space-y-8 max-w-4xl mx-auto">
+                                <!-- Phase 1 -->
+                                <div class="flex gap-6">
+                                        <div
+                                                class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+                                                <span class="font-display text-2xl text-secondary">01</span>
+                                        </div>
+                                        <div>
+                                                <h3 class="font-headline-md text-primary mb-2">Giai đoạn 1: Khai mở tư
+                                                        duy &amp; Làm chủ công cụ nền tảng</h3>
+                                                <p class="font-body-md text-on-surface-variant">Hiểu đúng về AI, cách
+                                                        đặt Prompt hiệu quả. Làm chủ ChatGPT, Claude cho các tác vụ hàng
+                                                        ngày.</p>
+                                        </div>
+                                </div>
+                                <!-- Phase 2 -->
+                                <div class="flex gap-6">
+                                        <div
+                                                class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+                                                <span class="font-display text-2xl text-secondary">02</span>
+                                        </div>
+                                        <div>
+                                                <h3 class="font-headline-md text-primary mb-2">Giai đoạn 2: Tự động hóa
+                                                        quy trình làm việc</h3>
+                                                <p class="font-body-md text-on-surface-variant">Sử dụng AI để tổng hợp
+                                                        dữ liệu, làm báo cáo, quản lý email và lên kế hoạch tự động.</p>
+                                        </div>
+                                </div>
+                                <!-- Phase 3 -->
+                                <div class="flex gap-6">
+                                        <div
+                                                class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+                                                <span class="font-display text-2xl text-secondary">03</span>
+                                        </div>
+                                        <div>
+                                                <h3 class="font-headline-md text-primary mb-2">Giai đoạn 3: Nâng cao
+                                                        chất lượng chuyên môn</h3>
+                                                <p class="font-body-md text-on-surface-variant">Ứng dụng AI chuyên sâu
+                                                        vào Content, Design, Phân tích dữ liệu theo từng ngành nghề.</p>
+                                        </div>
+                                </div>
+                                <!-- Phase 4 -->
+                                <div class="flex gap-6">
+                                        <div
+                                                class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+                                                <span class="font-display text-2xl text-secondary">04</span>
+                                        </div>
+                                        <div>
+                                                <h3 class="font-headline-md text-primary mb-2">Giai đoạn 4: Xây dựng
+                                                        thương hiệu &amp; Gia tăng thu nhập</h3>
+                                                <p class="font-body-md text-on-surface-variant">Sử dụng AI để xây dựng
+                                                        thương hiệu cá nhân, tìm kiếm khách hàng và kiếm tiền từ các dự
+                                                        án Freelance.</p>
+                                        </div>
+                                </div>
+                                <!-- Phase 5 -->
+                                <div class="flex gap-6">
+                                        <div
+                                                class="w-16 h-16 rounded-full bg-secondary-fixed flex items-center justify-center shrink-0">
+                                                <span class="font-display text-2xl text-secondary">05</span>
+                                        </div>
+                                        <div>
+                                                <h3 class="font-headline-md text-primary mb-2">Giai đoạn 5: Cố vấn
+                                                        chuyên sâu 1-1</h3>
+                                                <p class="font-body-md text-on-surface-variant">Giải quyết các vấn đề cụ
+                                                        thể của từng cá nhân và định hướng lộ trình phát triển dài hạn.
+                                                </p>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 9 — VIDEO INTRO -->
+        <section class="py-section-padding bg-background text-center">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <h2 class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-8">Khám
+                                phá chương trình Smart Work - Smart Money</h2>
+                        <div
+                                class="w-full max-w-4xl mx-auto aspect-video bg-surface-container-high rounded-2xl flex items-center justify-center shadow-lg relative group cursor-pointer">
+                                <span
+                                        class="material-symbols-outlined text-6xl text-primary opacity-50 group-hover:opacity-100 transition-opacity">play_circle</span>
+                                <p class="absolute bottom-4 left-4 font-label-md text-on-surface-variant">Video
+                                        Introduction (Placeholder)</p>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 10 — MENTOR -->
+        <section class="py-section-padding bg-surface" id="giangvien">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Đội ngũ đồng hành cùng bạn</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 gap-12 items-center">
+                                <div
+                                        class="w-full aspect-square bg-surface-container-high rounded-2xl flex items-center justify-center overflow-hidden">
+                                        <img alt="Mentor Nguyen" class="w-full h-full object-cover"
+                                                src="images/mentor.png">
+                                </div>
+                                <div class="mentor-info">
+                                        <h3 class="mentor-name">Mentor Nguyễn</h3>
+                                        <p class="mentor-title">Chuyên gia Tối ưu Hóa Hiệu suất &amp; Ứng dụng AI</p>
+
+                                        <p class="mentor-bio">
+                                                Với hơn <strong>20 năm kinh nghiệm</strong> trong lĩnh vực quản lý và
+                                                chuyển đổi số, Mentor Nguyễn là một trong những chuyên gia tiên phong
+                                                ứng dụng <strong>AI vào môi trường doanh nghiệp Việt Nam</strong>. Ông
+                                                đã trực tiếp triển khai các giải pháp AI giúp doanh nghiệp tăng năng
+                                                suất lên đến <strong>3 lần</strong>, đồng thời đào tạo hàng nghìn cán
+                                                bộ, nhân viên làm chủ công nghệ trong thực tiễn công việc hàng ngày.
+                                        </p>
+
+                                        <div class="mentor-stats">
+                                                <div class="stat-card">
+                                                        <span class="stat-val">20+</span>
+                                                        <span class="stat-label">Năm kinh nghiệm quản lý</span>
+                                                </div>
+                                                <div class="stat-card">
+                                                        <span class="stat-val">50+</span>
+                                                        <span class="stat-label">Doanh nghiệp tư vấn AI</span>
+                                                </div>
+                                                <div class="stat-card">
+                                                        <span class="stat-val">10K+</span>
+                                                        <span class="stat-label">Học viên đã đào tạo</span>
+                                                </div>
+                                        </div>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 11 — VALUES RECEIVED -->
+        <section class="py-section-padding bg-background" id="giatri">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Những giá trị bạn sẽ nhận được</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div class="value-card p-6 border border-surface-variant rounded-xl">
+                                        <h3 class="font-headline-md text-primary mb-2 text-lg">1. Xóa bỏ mù công nghệ
+                                        </h3>
+                                        <p class="font-body-md text-on-surface-variant">Tự tin sử dụng mọi công cụ AI cơ
+                                                bản đến nâng cao.</p>
+                                </div>
+                                <div class="value-card p-6 border border-surface-variant rounded-xl">
+                                        <h3 class="font-headline-md text-primary mb-2 text-lg">2. Trọn bộ Prompt thực
+                                                chiến</h3>
+                                        <p class="font-body-md text-on-surface-variant">Hàng trăm mẫu Prompt cho từng
+                                                ngành nghề, sẵn sàng sử dụng.</p>
+                                </div>
+                                <div class="value-card p-6 border border-surface-variant rounded-xl">
+                                        <h3 class="font-headline-md text-primary mb-2 text-lg">3. Quy trình làm việc tự
+                                                động hóa</h3>
+                                        <p class="font-body-md text-on-surface-variant">Xây dựng luồng làm việc thông
+                                                minh, giải phóng sức lao động.</p>
+                                </div>
+                                <div class="value-card p-6 border border-surface-variant rounded-xl">
+                                        <h3 class="font-headline-md text-primary mb-2 text-lg">4. Cơ hội thăng tiến
+                                                &amp; Tăng thu nhập</h3>
+                                        <p class="font-body-md text-on-surface-variant">Biến năng lực AI thành lợi thế
+                                                cạnh tranh tuyệt đối.</p>
+                                </div>
+                                <div class="value-card p-6 border border-surface-variant rounded-xl">
+                                        <h3 class="font-headline-md text-primary mb-2 text-lg">5. Cộng đồng Hỗ trợ trọn
+                                                đời</h3>
+                                        <p class="font-body-md text-on-surface-variant">Tham gia Group Kín, cập nhật
+                                                kiến thức AI mới nhất mỗi ngày.</p>
+                                </div>
+                                <div class="value-card p-6 border border-surface-variant rounded-xl">
+                                        <h3 class="font-headline-md text-primary mb-2 text-lg">6. Chứng nhận hoàn thành
+                                        </h3>
+                                        <p class="font-body-md text-on-surface-variant">Chứng nhận năng lực ứng dụng AI
+                                                cấp bởi Smart Work.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 12 — TESTIMONIALS -->
+        <section class="py-section-padding bg-surface-container-low" id="danhgia">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Cảm nhận của học viên sau khóa học</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                                <div
+                                        class="bg-surface p-6 rounded-2xl shadow-sm border border-surface-variant hover:shadow-lg transition-shadow">
+                                        <div class="star-rating"></div>
+                                        <div class="flex items-center gap-4 mb-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+                                                        <img alt="Nguyen Van A" class="w-full h-full object-cover"
+                                                                src="images/testimonial_user1.png">
+                                                </div>
+                                                <div>
+                                                        <p class="font-headline-md text-sm text-primary">Nguyễn Văn A
+                                                        </p>
+                                                        <p class="font-label-md text-xs text-on-surface-variant">
+                                                                Marketing Manager</p>
+                                                </div>
+                                        </div>
+                                        <p class="font-body-md text-on-surface-variant italic">"Khóa học thực sự thay
+                                                đổi cách tôi làm việc. Rút ngắn thời gian viết content và lên plan từ 2
+                                                ngày xuống 2 tiếng."</p>
+                                </div>
+                                <div
+                                        class="bg-surface p-6 rounded-2xl shadow-sm border border-surface-variant hover:shadow-lg transition-shadow">
+                                        <div class="star-rating"></div>
+                                        <div class="flex items-center gap-4 mb-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+                                                        <img alt="Tran Thi B" class="w-full h-full object-cover"
+                                                                src="images/testimonial_user2.png">
+                                                </div>
+                                                <div>
+                                                        <p class="font-headline-md text-sm text-primary">Trần Thị B</p>
+                                                        <p class="font-label-md text-xs text-on-surface-variant">HR
+                                                                Executive</p>
+                                                </div>
+                                        </div>
+                                        <p class="font-body-md text-on-surface-variant italic">"Mình không còn sợ Excel
+                                                hay các báo cáo dài dòng nữa. AI giúp xử lý số liệu siêu nhanh và chính
+                                                xác."</p>
+                                </div>
+                                <div
+                                        class="bg-surface p-6 rounded-2xl shadow-sm border border-surface-variant hover:shadow-lg transition-shadow">
+                                        <div class="star-rating"></div>
+                                        <div class="flex items-center gap-4 mb-4">
+                                                <div
+                                                        class="w-12 h-12 rounded-full bg-surface-container-high overflow-hidden">
+                                                        <img alt="Le Van C" class="w-full h-full object-cover"
+                                                                src="images/testimonial_user3.png">
+                                                </div>
+                                                <div>
+                                                        <p class="font-headline-md text-sm text-primary">Lê Văn C</p>
+                                                        <p class="font-label-md text-xs text-on-surface-variant">
+                                                                Freelancer Design</p>
+                                                </div>
+                                        </div>
+                                        <p class="font-body-md text-on-surface-variant italic">"Ý tưởng dồi dào, tạo
+                                                mockup siêu tốc. Nhờ khóa học mà thu nhập freelance của mình tăng gấp
+                                                đôi."</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 13 — SPECIAL GIFTS -->
+        <section class="py-section-padding bg-background" id="quatang">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Đăng ký hôm nay để nhận ngay những quà tặng giá trị</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+                                <div class="p-4 bg-primary-fixed/20 rounded-lg flex items-start gap-4">
+                                        <span class="material-symbols-outlined text-secondary">card_giftcard</span>
+                                        <p class="font-body-md text-on-surface">Tài khoản ChatGPT Plus 1 tháng</p>
+                                </div>
+                                <div class="p-4 bg-primary-fixed/20 rounded-lg flex items-start gap-4">
+                                        <span class="material-symbols-outlined text-secondary">card_giftcard</span>
+                                        <p class="font-body-md text-on-surface">Bộ tài liệu 500+ Prompt độc quyền</p>
+                                </div>
+                                <div class="p-4 bg-primary-fixed/20 rounded-lg flex items-start gap-4">
+                                        <span class="material-symbols-outlined text-secondary">card_giftcard</span>
+                                        <p class="font-body-md text-on-surface">Khóa học Mini: Thiết kế ảnh bằng
+                                                Midjourney</p>
+                                </div>
+                                <div class="p-4 bg-primary-fixed/20 rounded-lg flex items-start gap-4">
+                                        <span class="material-symbols-outlined text-secondary">card_giftcard</span>
+                                        <p class="font-body-md text-on-surface">Ebook: Tự động hóa công việc với Zapier
+                                        </p>
+                                </div>
+                                <div class="p-4 bg-primary-fixed/20 rounded-lg flex items-start gap-4">
+                                        <span class="material-symbols-outlined text-secondary">card_giftcard</span>
+                                        <p class="font-body-md text-on-surface">Mẫu CV Tối ưu AI thu hút nhà tuyển dụng
+                                        </p>
+                                </div>
+                                <div class="p-4 bg-primary-fixed/20 rounded-lg flex items-start gap-4">
+                                        <span class="material-symbols-outlined text-secondary">card_giftcard</span>
+                                        <p class="font-body-md text-on-surface">1 giờ Coaching 1-1 với Mentor Nguyễn</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 14 — COMMITMENT -->
+        <section class="py-section-padding bg-surface-container-low">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Cam kết từ Smart Work</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="flex flex-col md:flex-row justify-center gap-8 text-center max-w-4xl mx-auto">
+                                <div class="flex-1">
+                                        <span
+                                                class="material-symbols-outlined text-4xl text-primary mb-2">verified_user</span>
+                                        <h3 class="font-headline-md text-lg mb-2">Hoàn tiền 100%</h3>
+                                        <p class="font-body-md text-on-surface-variant text-sm">Nếu không hài lòng sau 2
+                                                buổi học đầu tiên.</p>
+                                </div>
+                                <div class="flex-1">
+                                        <span class="material-symbols-outlined text-4xl text-primary mb-2">update</span>
+                                        <h3 class="font-headline-md text-lg mb-2">Học lại miễn phí</h3>
+                                        <p class="font-body-md text-on-surface-variant text-sm">Cập nhật kiến thức AI
+                                                trọn đời mà không tốn phí.</p>
+                                </div>
+                                <div class="flex-1">
+                                        <span
+                                                class="material-symbols-outlined text-4xl text-primary mb-2">support_agent</span>
+                                        <h3 class="font-headline-md text-lg mb-2">Hỗ trợ 24/7</h3>
+                                        <p class="font-body-md text-on-surface-variant text-sm">Giải đáp mọi thắc mắc
+                                                trong suốt quá trình áp dụng.</p>
+                                </div>
+                                <div class="flex-1">
+                                        <span
+                                                class="material-symbols-outlined text-4xl text-primary mb-2">fact_check</span>
+                                        <h3 class="font-headline-md text-lg mb-2">Chất lượng đảm bảo</h3>
+                                        <p class="font-body-md text-on-surface-variant text-sm">Giáo trình cập nhật liên
+                                                tục theo công nghệ mới nhất.</p>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 15 — CALL TO ACTION & BLOCK 16 — REGISTRATION -->
+        <section class="py-section-padding bg-primary text-on-primary" id="dangky">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-on-primary mb-4">
+                                        Đã đến lúc bạn bứt phá sự nghiệp</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="grid lg:grid-cols-2 gap-16 items-center">
+                                <!-- Info -->
+                                <div>
+                                        <p class="font-body-lg text-on-primary/80 mb-8">Đăng ký ngay hôm nay để nhận ưu
+                                                đãi đặc biệt và bộ quà tặng độc quyền từ chương trình.</p>
+                                        <div class="space-y-6 mb-8">
+                                                <div class="flex items-center gap-4">
+                                                        <span
+                                                                class="material-symbols-outlined text-secondary-fixed-dim">schedule</span>
+                                                        <div>
+                                                                <p class="font-label-md text-on-primary/60">Thời lượng
+                                                                </p>
+                                                                <p class="font-body-md font-semibold text-on-primary">8
+                                                                        Buổi chuyên sâu + 30 ngày đồng hành</p>
+                                                        </div>
+                                                </div>
+                                                <div class="flex items-center gap-4">
+                                                        <span
+                                                                class="material-symbols-outlined text-secondary-fixed-dim">laptop_mac</span>
+                                                        <div>
+                                                                <p class="font-label-md text-on-primary/60">Hình thức
+                                                                </p>
+                                                                <p class="font-body-md font-semibold text-on-primary">
+                                                                        Học trực tuyến qua Zoom (Interactive Live)</p>
+                                                        </div>
+                                                </div>
+                                        </div>
+                                        <div
+                                                class="bg-primary-container p-6 rounded-xl border border-outline-variant/20 inline-block">
+                                                <p
+                                                        class="font-label-md text-on-primary-container uppercase tracking-wider mb-1">
+                                                        Học phí ưu đãi (Giới hạn 50 suất)</p>
+                                                <div class="flex items-baseline gap-4">
+                                                        <span
+                                                                class="font-display text-4xl text-on-tertiary-container font-bold">4.990.000đ</span>
+                                                        <span
+                                                                class="font-body-md text-outline line-through">12.000.000đ</span>
+                                                </div>
+                                        </div>
+                                </div>
+                                <!-- Form -->
+                                <div class="form-spotlight bg-surface rounded-2xl p-8 shadow-2xl">
+                                        <h3 class="font-headline-md text-primary mb-6 text-center">ĐĂNG KÝ NHẬN TƯ VẤN
+                                        </h3>
+                                        <form class="space-y-4">
+                                                <div>
+                                                        <label class="block font-label-md text-on-surface-variant mb-1">Họ
+                                                                và tên *</label>
+                                                        <input class="w-full rounded-lg border-outline-variant focus:border-secondary focus:ring-secondary/50 bg-surface-container-lowest text-on-surface px-4 py-3"
+                                                                required="" type="text">
+                                                </div>
+                                                <div>
+                                                        <label class="block font-label-md text-on-surface-variant mb-1">Số
+                                                                điện thoại *</label>
+                                                        <input class="w-full rounded-lg border-outline-variant focus:border-secondary focus:ring-secondary/50 bg-surface-container-lowest text-on-surface px-4 py-3"
+                                                                required="" type="tel">
+                                                </div>
+                                                <div>
+                                                        <label class="block font-label-md text-on-surface-variant mb-1">Email
+                                                                *</label>
+                                                        <input class="w-full rounded-lg border-outline-variant focus:border-secondary focus:ring-secondary/50 bg-surface-container-lowest text-on-surface px-4 py-3"
+                                                                required="" type="email">
+                                                </div>
+                                                <div>
+                                                        <label class="block font-label-md text-on-surface-variant mb-1">Vị
+                                                                trí công việc hiện tại</label>
+                                                        <input class="w-full rounded-lg border-outline-variant focus:border-secondary focus:ring-secondary/50 bg-surface-container-lowest text-on-surface px-4 py-3"
+                                                                type="text">
+                                                </div>
+                                                <button class="w-full bg-on-tertiary-container text-on-tertiary font-label-md px-6 py-4 rounded-xl hover:opacity-90 transition-all shadow-md mt-4 text-lg"
+                                                        type="submit">
+                                                        ĐĂNG KÝ NGAY
+                                                </button>
+                                                <p class="text-center font-label-md text-[12px] text-outline mt-4">Thông
+                                                        tin của bạn được bảo mật tuyệt đối.</p>
+                                        </form>
+                                </div>
+                        </div>
+                </div>
+        </section>
+        <!-- BLOCK 17 — FAQ -->
+        <section class="py-section-padding bg-surface" id="faq">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="text-center mb-16">
+                                <h2
+                                        class="font-headline-lg text-headline-lg-mobile md:text-headline-lg text-primary mb-4">
+                                        Câu hỏi thường gặp</h2>
+                                <div class="w-24 h-1 bg-on-tertiary-container mx-auto rounded-full"></div>
+                        </div>
+                        <div class="max-w-3xl mx-auto space-y-4">
+                                <!-- Question 1 -->
+                                <details
+                                        class="bg-surface-container-lowest p-6 rounded-xl border border-surface-variant cursor-pointer group">
+                                        <summary
+                                                class="font-headline-md text-lg text-primary list-none flex justify-between items-center">
+                                                Tôi không biết lập trình có học được không?
+                                                <span
+                                                        class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                                        </summary>
+                                        <p class="mt-4 font-body-md text-on-surface-variant">Hoàn toàn được. Khóa học
+                                                thiết kế cho người không chuyên IT, chỉ cần biết dùng máy tính cơ bản.
+                                        </p>
+                                </details>
+                                <!-- Question 2 -->
+                                <details
+                                        class="bg-surface-container-lowest p-6 rounded-xl border border-surface-variant cursor-pointer group">
+                                        <summary
+                                                class="font-headline-md text-lg text-primary list-none flex justify-between items-center">
+                                                Học xong có áp dụng được ngay không?
+                                                <span
+                                                        class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                                        </summary>
+                                        <p class="mt-4 font-body-md text-on-surface-variant">Có, khóa học "Learn by
+                                                Doing", bạn sẽ thực hành trên chính công việc của mình ngay từ buổi đầu
+                                                tiên.</p>
+                                </details>
+                                <!-- Question 3 -->
+                                <details
+                                        class="bg-surface-container-lowest p-6 rounded-xl border border-surface-variant cursor-pointer group">
+                                        <summary
+                                                class="font-headline-md text-lg text-primary list-none flex justify-between items-center">
+                                                Nếu bận không học trực tiếp được thì sao?
+                                                <span
+                                                        class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                                        </summary>
+                                        <p class="mt-4 font-body-md text-on-surface-variant">Tất cả các buổi học đều có
+                                                Video Record và tài liệu để bạn xem lại bất cứ lúc nào.</p>
+                                </details>
+                                <!-- Question 4 -->
+                                <details
+                                        class="bg-surface-container-lowest p-6 rounded-xl border border-surface-variant cursor-pointer group">
+                                        <summary
+                                                class="font-headline-md text-lg text-primary list-none flex justify-between items-center">
+                                                Cần chuẩn bị gì trước khi học?
+                                                <span
+                                                        class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                                        </summary>
+                                        <p class="mt-4 font-body-md text-on-surface-variant">Một chiếc máy tính có kết
+                                                nối mạng ổn định và tinh thần sẵn sàng học hỏi.</p>
+                                </details>
+                                <!-- Question 5 -->
+                                <details
+                                        class="bg-surface-container-lowest p-6 rounded-xl border border-surface-variant cursor-pointer group">
+                                        <summary
+                                                class="font-headline-md text-lg text-primary list-none flex justify-between items-center">
+                                                Có cấp chứng chỉ sau khóa học không?
+                                                <span
+                                                        class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                                        </summary>
+                                        <p class="mt-4 font-body-md text-on-surface-variant">Có, bạn sẽ nhận được chứng
+                                                nhận điện tử sau khi hoàn thành các bài tập cuối khóa.</p>
+                                </details>
+                                <!-- Question 6 -->
+                                <details
+                                        class="bg-surface-container-lowest p-6 rounded-xl border border-surface-variant cursor-pointer group">
+                                        <summary
+                                                class="font-headline-md text-lg text-primary list-none flex justify-between items-center">
+                                                Hỗ trợ sau khóa học như thế nào?
+                                                <span
+                                                        class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                                        </summary>
+                                        <p class="mt-4 font-body-md text-on-surface-variant">Được tham gia group hỗ trợ
+                                                trọn đời và giải đáp thắc mắc bởi Mentor và trợ giảng.</p>
+                                </details>
+                                <!-- Question 7 -->
+                                <details
+                                        class="bg-surface-container-lowest p-6 rounded-xl border border-surface-variant cursor-pointer group">
+                                        <summary
+                                                class="font-headline-md text-lg text-primary list-none flex justify-between items-center">
+                                                Các phần mềm sử dụng trong khóa có tốn phí không?
+                                                <span
+                                                        class="material-symbols-outlined group-open:rotate-180 transition-transform">expand_more</span>
+                                        </summary>
+                                        <p class="mt-4 font-body-md text-on-surface-variant">Khóa học tập trung vào các
+                                                công cụ miễn phí hoặc có gói miễn phí đủ dùng. Chúng tôi cũng tặng tài
+                                                khoản ChatGPT Plus tháng đầu cho bạn trải nghiệm.</p>
+                                </details>
+                        </div>
+                </div>
+        </section>
+        <!-- FOOTER (Shared Component) -->
+        <footer class="w-full pb-12 bg-primary text-on-primary border-t border-white/10 pt-8">
+                <div class="max-w-container-max mx-auto px-gutter">
+                        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-16">
+                                <div class="space-y-6">
+                                        <div class="flex items-center gap-2 font-display text-headline-md font-bold">
+                                                <span class="material-symbols-outlined text-on-tertiary-container"
+                                                        style="font-size: 32px;">school</span><span class="">SWSM</span>
+                                        </div>
+                                        <p class="font-body-md text-on-primary/60 leading-relaxed">Làm việc thông minh –
+                                                Kiếm tiền thông minh – Sống cuộc đời tự do.</p>
+                                </div>
+                                <div class="space-y-6">
+                                        <div>
+                                                <h4 class="font-headline-md text-lg uppercase tracking-wider mb-6">NỘI
+                                                        DUNG</h4>
+                                                <ul class="space-y-4">
+                                                        <li
+                                                                class="font-body-md text-on-primary/60 hover:text-on-primary transition-colors">
+                                                                <a href="#vande" class="">Vấn đề</a>
+                                                        </li>
+                                                        <li
+                                                                class="font-body-md text-on-primary/60 hover:text-on-primary transition-colors">
+                                                                <a href="#lotrinh" class="">Lộ trình</a>
+                                                        </li>
+                                                        <li
+                                                                class="font-body-md text-on-primary/60 hover:text-on-primary transition-colors">
+                                                                <a href="#dangky" class="">Đăng ký</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="space-y-6">
+                                        <div>
+                                                <h4 class="font-headline-md text-lg uppercase tracking-wider mb-6">VỀ
+                                                        CHÚNG TÔI</h4>
+                                                <ul class="space-y-4">
+                                                        <li
+                                                                class="font-body-md text-on-primary/60 hover:text-on-primary transition-colors">
+                                                                <a href="#giangvien" class="">Giảng viên</a>
+                                                        </li>
+                                                        <li
+                                                                class="font-body-md text-on-primary/60 hover:text-on-primary transition-colors">
+                                                                <a href="#danhgia" class="">Cảm nhận</a>
+                                                        </li>
+                                                        <li
+                                                                class="font-body-md text-on-primary/60 hover:text-on-primary transition-colors">
+                                                                <a href="#faq" class="">Câu hỏi</a>
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                                <div class="space-y-6">
+                                        <div>
+                                                <h4 class="font-headline-md text-lg uppercase tracking-wider mb-6">LIÊN
+                                                        HỆ</h4>
+                                                <ul class="space-y-4 font-body-md text-on-primary/60">
+                                                        <li class="flex items-center gap-2">Hotline: 0123 456 789</li>
+                                                        <li class="flex items-center gap-2">
+                                                                support@smartworksmartmoney.vn</li>
+                                                        <li class="flex items-center gap-2">www.smartworksmartmoney.vn
+                                                        </li>
+                                                </ul>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="pt-8 border-t border-white/10 text-center">
+                                <p class="font-body-md text-on-primary/40 text-sm">© 2026 Smart Work Smart Money. All
+                                        rights reserved.</p>
+                        </div>
+                </div>
+        </footer>
+        <script>
+                // Scroll-triggered entrance animation
+                const observer = new IntersectionObserver((entries) => {
+                        entries.forEach((entry, i) => {
+                                if (entry.isIntersecting) {
+                                        setTimeout(() => entry.target.classList.add('visible'), i * 80);
+                                        observer.unobserve(entry.target);
+                                }
+                        });
+                }, { threshold: 0.1, rootMargin: '0px 0px -60px 0px' });
+
+                document.querySelectorAll('section h2, section h3, .pain-item, .value-card, .glass-panel, .bg-surface.p-6, .bg-surface.p-8').forEach(el => {
+                        el.setAttribute('data-animate', '');
+                        observer.observe(el);
+                });
+        </script>
+</body>
+
+</html>
